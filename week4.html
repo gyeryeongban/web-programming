@@ -1,505 +1,206 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>CSS3 출력 스타일 작성</title>
-    <!-- <style>
-        body {
-            background: skyblue;
-        }
-
-        h3 {
-            background: blue;
-            color: white;
-            text-align: center;
-        }
-    </style> -->
-
-    <!-- <style>
-        h1,
-        h2,
-        h5,
-        pre {
-            background: skyblue;
-        }
-    </style>
-
-    <style>
-        @import "week4.css";
-    </style>
-
-    <style>
-        h1,
-        div {
-            background: blue;
-            color: white;
-        }
-    </style> -->
-
-    <!-- <style>
-        .c1 {
-            background: skyblue;
-        }
-
-        .c2 {
-            color: blue;
-        }
-
-        .c3 {
-            color: red;
-        }
-
-        #a1 {
-            background: orange;
-        }
-    </style> -->
-
-    <!-- <style>
-        h1 {
-            background: orange;
-        }
-
-        h1:hover {
-            background: black;
-            color: white;
-        }
-
-        h1:active {
-            background: white;
-            color: black;
-        }
-    </style> -->
-
-    <!-- <style>
-        p {
-            background: aqua;
-        }
-
-        p::first-letter {
-            color: red;
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        p::first-line {
-            background: gold;
-        }
-    </style> -->
-
-    <!-- <style>
-        li:first-child {
-            color: red;
-        }
-
-        li:last-child {
-            color: blue;
-        }
-
-        li:nth-child(2) {
-            background: yellow;
-        }
-
-        li:nth-last-child(2) {
-            background: gray;
-        }
-    </style> -->
-
-    <!-- <style>
-        h1::before {
-            content: url(/week2-docu/html.png)
-        }
-
-        h1::after {
-            content: "(HTML+CSS+JavaScript)";
-            font-size: small;
-            color: red;
-        }
-    </style> -->
-
-    <!-- <style>
-        ol>li {
-            color: red;
-        }
-    </style>
-
-    <style>
-        ol li {
-            color: red;
-        }
-    </style> -->
-
-    <!-- <style>
-        * {
-            background: skyblue;
-        }
-
-        h1 {
-            background: blue;
-            color: white;
-        }
-
-        h3 {
-            background: white;
-        }
-
-        h3#a {
-            background: gray;
-        }
-
-        div h3 {
-            background: orange;
-        }
-    </style> -->
-
-    <!-- <style>
-        #parent {
-            font-size: 40px;
-        }
-
-        #child1 {
-            font-size: 20px;
-        }
-
-        #child2 {
-            font-size: 150%;
-        }
-
-        #child3 {
-            font-size: 75%;
-        }
-
-        #child4 {
-            font-size: 1.2em;
-        }
-
-        #child5 {
-            font-size: 0.5em;
-        }
-    </style> -->
-
-    <!-- <style>
-        #b1 {
-            background: lavender;
-        }
-
-        #b2 {
-            background: #E6E6FA;
-        }
-
-        #b3 {
-            background: rgb(230, 230, 250);
-        }
-
-        #b4 {
-            background: rgba(230, 230, 250, 1.0);
-        }
-
-        #b5 {
-            background: rgba(230, 230, 250, 0.0);
-        }
-
-        #b6 {
-            background: rgba(230, 230, 250, 0.3);
-        }
-
-        #b7 {
-            background: rgba(230, 230, 250, 0.5);
-        }
-
-        #b8 {
-            background: rgba(230, 230, 250, 0.8);
-        }
-    </style> -->
-
-    <!-- <style>
-        body {
-            background-color: lavender;
-            background-image: url("/week2-docu/html.png");
-            background-position: left top;
-        }
-
-        body {
-            background-repeat: repeat;
-        }
-
-        body {
-            background-repeat: no-repeat;
-        }
-
-        body {
-            background-repeat: repeat-x;
-        }
-
-        body {
-            background-repeat: repeat-y;
-        }
-    </style> -->
-
-    <!-- <style>
-        h3.uppercase {
-            text-align: center;
-            text-decoration: overline;
-            text-transform: uppercase;
-        }
-
-        h3.lowercase {
-            text-align: left;
-            text-decoration: line-through;
-            text-transform: lowercase;
-        }
-
-        h3.capitalize {
-            text-align: right;
-            text-decoration: underline;
-            text-transform: capitalize;
-        }
-    </style> -->
-
-    <!-- <style>
-        p {
-            font-family: "Georgia, 맑은 고딕, serif";
-        }
-
-        #p1 {
-            font-size: smaller;
-        }
-
-        #p2 {
-            font-size: small;
-            font-style: italic;
-            font-weight: bold;
-        }
-
-        #p3 {
-            font-size: medium;
-            font-style: normal;
-            font-weight: normal;
-        }
-
-        #p4 {
-            font-size: large;
-            font-style: oblique;
-            font-weight: bold;
-        }
-
-        #p5 {
-            font-size: larger;
-        }
-    </style> -->
-
-    <!-- <style>
-        .article {
-            column-count: 3;
-            column-gap: 40px;
-            column-rule: 2px solid red;
-        }
-
-        h1 {
-            column-span: all;
-        }
-    </style> -->
-
-    <!-- <style>
-        ul,
-        ol {
-            border: 1px red dashed;
-        }
-
-        li {
-            border: 1px green dotted;
-        }
-
-        ul.a {
-            list-style-type: circle;
-        }
-
-        ul.b {
-            list-style-type: square;
-            list-style-position: inside;
-        }
-
-        ul.c {
-            list-style-image: url("/week2-docu/css.png");
-            list-style-position: outside;
-        }
-
-        ol.d {
-            list-style-type: upper-roman;
-        }
-
-        ol.e {
-            list-style: lower-alpha;
-            list-style-position: inside;
-        }
-    </style> -->
-
-    <style>
-        table {
-            table-layout: auto;
-            width: 80%;
-            border-collapse: separate;
-            border-spacing: 5px 10px;
-            border: 2px solid blue;
-        }
-
-        td {
-            text-align: center;
-            border: 1px dotted red;
-        }
-
-        tr:first-child {
-            background: gray;
-        }
-
-        .c4 {
-            vertical-align: top;
-        }
-    </style>
-</head>
-
 <body>
-    <!-- <h3>HTML5 프로그래밍!</h3>
-    <hr>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript & jQuery</li>
-        <li>HTML5 API</li>
-    </ul> -->
-
-    <!-- <h1>HTML5 웹프로그래밍1 (h1)</h1>
-    <h1 style="background: black;">HTML5 웹프로그래밍2 (h1)</h1>
-    <h2>HTML5 웹프로그래밍3 (h2)</h2>
-    <div>
-        <h3>HTML5 웹프로그래밍4 (h3)</h3>
-    </div>
-    <pre><h3>HTML5 웹프로그래밍5 (h3)</h3></pre>
-    <h3>HTML5 웹프로그래밍6 (h3)</h3>
-    <h4>HTML5 웹프로그래밍7 (h4)</h4> -->
-
-    <!-- <h3>HTML5 프로그래밍</h3>
-    <hr>
-    <o1>
-        <li class="c1 c3">HTML5</li>
+    <header>웹 페이지 타이틀</header>
+    <nav>
+        <a href="">메뉴 항목1</a>
+        <a href="">메뉴 항목2</a>
+        <a href="">메뉴 항목3</a>
+    </nav>
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+    </section>
+    <article>
+        Vivamus venenatis velit nec neque ultricies ...
+    </article>
+    <aside>
+        참고 내용
         <ul>
-            <li class="c2">하이퍼링크</li>
-            <li class="c2">입력 양식</li>
+            <li>참고 내용1</li>
+            <li>참고 내용2</li>
         </ul>
-        <li>CSS3</li>
-        <ul>
-            <li class="c3">선택자</li>
-            <li class="c3">CSS 스타일 속성</li>
-            <li id="a1">레이아웃</li>
-        </ul>
-        <li class="c1 c2">JavaScript</li>
-    </o1> -->
-
-    <!-- <h1>HTML5 웹프로그래밍</h1> -->
-
-    <!-- <p>HTML5 웹프로그래밍에서는 HTML, CSS, 자바스크립트를 공부합니다.</p> -->
-
-    <!-- <h1>HTML5 웹프로그래밍</h1>
+    </aside>
+    <footer>
+        연락처: 010-0000-0000&nbsp;웹-페이지 개발자
+    </footer>
     <hr>
-    <ul>
-        <li>웹서버 설치</li>
-        <li>HTML5 문서 작성하기</li>
-        <li>CSS 스타일시트 작성하기</li>
-        <li>자바스크립트 프로그래밍</li>
-        <li>HTML DOM 프로그래밍</li>
-    </ul> -->
 
-    <!-- <h1>HTML5 웹프로그래밍</h1>
-    <ol>
-        <li>HTML5</li>
-        <ul>
-            <li>하이퍼링크</li>
-            <li>테이블</li>
-            <li>입력 양식</li>
-        </ul>
-        <li>CSS3</li>
-        <ul>
-            <li>선택자</li>
-            <li>기본 속성</li>
-            <li>고급 속성</li>
-            <li>레이아웃</li>
-        </ul>
-        <li>JavaScript</li>
-    </ol> -->
-
-    <!-- <h1>웹프로그래밍</h1>
+    <h3>HTML5 웹프로그래밍의 학습 내용</h3>
+    <details>
+        <summary>HTML5</summary>
+        <p>HTML5는 HTML의 완전한 ...</p>
+    </details>
     <hr>
-    <div>
-        <h3>HTML5 문서 작성</h3>
-    </div>
-    <h3 id="a">CSS 스타일시트 작성</h3>
-    <h3>자바스크립트 프로그래밍</h3> -->
 
-    <!-- <div id="parent">웹프로그래밍0 (40px-기준)
+    <!-- mark, time, meter, progress의 사용 예 -->
+    <h3>공지사항</h3>
+    내용: <mark>중간고사 알림</mark><br>
+    시간: <time>10:00~11:00</time><br>
+    범위: 1장<progress value="6" max="10"></progress>
+    10장<br>
+    수준: <meter value="0.7">7</meter>
+    <hr>
+
+    <!-- 입력 양식(Form 요소) -->
+    <h2>성적 입력 & 조회</h2>
+    <pre><form method="get" action="processingGet.php">
+        전공(학과): <input type = "text" name="major" value="컴퓨터과학" />
+        이름: <input type = "text" name="name" value="" />
+        중간 성적: <input type = "text" name="middle" value="" />
+        기말 성적: <input type = "text" name="last" value="" />
+        <input type="submit" value="처리결과 조회" />
+        <input type="reset" value="입력 취소" />
+    </form></pre>
+    <hr>
+
+    텍스트 입력필드
+    <form>
+        아이디: <input type="text" name="userID" size="15" value="ID 입력요망" /><br>
+        패스워드: <input type="password" name="passwd" size="15" /><br>
+        <input type="submit" value="로그인" />
+        <input type="reset" value="입력 취소" />
+    </form>
+    <hr>
+
+    <form>
+        Q. 학생의 성별과 학년은?<br>
+        성별: <input type="radio" name="gender" value="female" />여성
+        <input type="radio" name="gender" value="male" />남성<br>
+        학년: <input type="radio" name="year" value="freshman" />1학년
+        <input type="radio" name="year" value="sophomore" checked />2학년
+        <input type="radio" name="year" value="junior" />3학년
+        <input type="radio" name="year" value="junior" />4학년
+    </form>
+    <hr>
+
+    <form>
+        Q. 즐겨보는 스포츠 중계 프로그램을 모두 선택하세요.<br>
+        <input type="checkbox" name="sport" value="baseball" checked />프로야구 중계
+        <input type="checkbox" name="sport" value="football" />프로축구 중계
+        <input type="checkbox" name="sport" value="golf" />프로골프 중계<br>
+        <input type="checkbox" name="sport" value="basketball" />프로농구 중계
+        <input type="checkbox" name="sport" value="volleyball" />프로배구 중계
+        <input type="checkbox" name="sport" value="gogame" />프로바둑 중계
+    </form>
+    <hr>
+
+    <form>
+        과제 제출: 파일을 첨부해서 제출하세요<br>
+        첨부 파일: <input type="file" name="filename" />
+    </form>
+    <hr>
+
+    <form>
+        HTML5 웹프로그래밍 = HTML5 + CSS3 + JavaScript<br>
+        <a href="https://www.w3schools.com/html/" target="_blank">
+            <button type="button">Learn HTML</button>
+        </a>
+        <button type="button" onclick="alert('버튼을 클릭했습니다!');">
+            cilck me
+        </button><br>
+        글 남기기: <input type="text" name="userID" size="35" />
+        <button type="submit">저장</button>
+        <button type="reset">지우기</button>
+    </form>
+    <hr>
+
+    <form>
+        방명록 작성하기<br>
+        <textarea rows="5" cols="50" name="memo">
+            방문 흔적을 남겨주세요.
+        </textarea><br>
+        <button type="submit">저장</button>
+        <button type="reset">지우기</button>
+    </form>
+    <hr>
+
+    <select name="변수명" size="1" multiple>
+        <option value="전달값-1" selected>선택 항목-1</option>
+        <option value="전달값-2">선택 항목-2</option>
+        <option value="전달값-3">선택 항목-3</option>
+    </select>
+    <hr>
+
+    <form>
+        회원님의 국적과 여행한 국가를 선택하세요<br>
+        국적:
+        <select name="country">
+            <option value="France">프랑스</option>
+            <option value="Korea" selected>한국</option>
+            <option value="USA">미국</option>
+        </select>
+        여행한 도시:
+        <select name="city" size="5" multiple>
+            <option value="파리">파리</option>
+            <option value="서울" selected>서울</option>
+            <option value="뉴욕">뉴욕</option>
+            <option value="런던"> 런던 </option>
+            <option value="헬싱키"> 헬싱키 </option>
+            <option value="베를린"> 베를린 </option>
+        </select>
+        <br>
+        <button type="submit">데이터 전송</button>
+    </form>
+    <hr>
+
+    <form>
+        Q1. 학생의 학년은 ? <br>
+        학년 : <input type="radio" name="year" value=“1" id="r1" /><label for="r1">1학년</label>
+        <input type="radio" name="year" value=“2" checked id="r2" /><label for="r2">2학년</label> <input type="radio"
+            name="year" value=“3" id="r3" /><label for="r3">3학년</label>
+        <input type="radio" name="year" value=“4" id="r4" /><label for="r4">4학년</label> <br>
         <hr>
-        <div id="child1">웹프로그래밍1 (20px)</div>
-        <div id="child2">웹프로그래밍2 (150%)</div>
-        <div id="child3">웹프로그래밍3 (75%)</div>
-        <div id="child4">웹프로그래밍4 (1.2em)</div>
-        <div id="child5">웹프로그래밍5 (0.5em)</div>
-    </div> -->
+    </form>
 
-    <!-- <body id="base">
-        <div id="b1">lavender</div>
-        <div id="b2">#E6E6FA</div>
-        <div id="b3">rgb(230, 230, 250)</div>
-        <div id="b4">rgba(230, 230, 250, 1.0)</div>
-        <div id="b5">rgba(230, 230, 250, 0.0)</div>
-        <div id="b6">rgba(230, 230, 250, 0.3)</div>
-        <div id="b7">rgba(230, 230, 250, 0.5)</div>
-        <div id="b8">rgba(230, 230, 250, 0.8)</div> -->
+    <form>
+        Q. 학생의 성별과 학년은?
+        <fieldset>
+            <legend>성별</legend>
+            <input type="radio" name="gender" value="female" />여성
+            <input type="radio" name="gender" value="male" />남성
+        </fieldset>
+    </form>
+    <hr>
 
-    <!-- <h3 class="uppercase">This is some text.</h3>
-    <h3 class="lowercase">This is some text.</h3>
-    <h3 class="capitalize">This is some text.</h3> -->
+    이메일: <input type="email" placeholder="xxx@xx.xx.xx.xx" name="email" /><br>
+    웹 주소: <input type="url" placeholder="http://xxx.xxx.xxx.xxxx" name="url" /><br>
+    연락처: <input type="tel" pattern="[0-9]{2,3}-[0-9]{3,4}-[0,9]{4}" placeholder="0**-999*-9999" />
+    <hr>
 
-    <!-- <p>JavaScript 프로그래밍</p>
-    <p id="p1">JavaScript 프로그래밍</p>
-    <p id="p2">JavaScript 프로그래밍</p>
-    <p id="p3">JavaScript 프로그래밍</p>
-    <p id="p4">JavaScript 프로그래밍</p>
-    <p id="p5">JavaScript 프로그래밍</p> -->
+    텍스트 & 검색어 입력필드 비교<br>
+    텍스트 입력: <input type="text" name="text" /><br>
+    검색어 입력: <input type="search" name="keyword" /><br>
+    <hr>
 
-    <!-- <div class="article">
-        <h1>Lorem Ipsum Dolor Sit Amet</h1>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
-    </div> -->
+    회의 일자: <input type="date" name="mday" /><br>
+    회의 시간: <input type="time" name="mtime" /><br>
+    나이: <input type="number" min="0" max="150" step="1" value="20" /><br>
+    시험 성적: <input type="range" min="0" max="100" step="5" value="50" /><br>
+    색상 선택: <input type="color" value="#FF0000" name="favorite" />
+    <hr>
 
-    <!-- <p>Example of unordered lists:</p>
-    <ul class="a">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-    </ul>
+    <a href="">
+        <input type="image" src="html.png" alt="아이콘1" />
+    </a><br>
+    <input type="image" src="html.png" onclick="alert('버튼이 클림됨!');" /><br>
+    <a href="">
+        <button type="button">
+            <img src="html.png" />
+        </button>
+    </a>
+    <hr>
 
-    <ul class="b">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-    </ul>
+    주전공:
+    <input type="text" list="major" />
+    <datalist id="major">
+        <option value="컴퓨터공학"></option>
+        <option value="건축공학"></option>
+        <option value="전자공학"></option>
+    </datalist><br>
+    주전공: <input type="text" placeholder="컴퓨터공학" /><br>
+    부전공: <input type="text" value="컴퓨터공학" /><br>
 
-    <ul class="c">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-    </ul>
-
-    <p>Example of ordered lists:</p>
-    <ol class="d">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-    </ol>
-
-    <ol class="e">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-    </ol> -->
 </body>
 
 </html>

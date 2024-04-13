@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 출력 스타일 작성</title>
+    <!-- <style>
+        body {
+            background: skyblue;
+        }
+
+        h3 {
+            background: blue;
+            color: white;
+            text-align: center;
+        }
+    </style> -->
+
+    <!-- <style>
+        h1,
+        h2,
+        h5,
+        pre {
+            background: skyblue;
+        }
+    </style>
+
+    <style>
+        @import "week4.css";
+    </style>
+
+    <style>
+        h1,
+        div {
+            background: blue;
+            color: white;
+        }
+    </style> -->
+
+    <!-- <style>
+        .c1 {
+            background: skyblue;
+        }
+
+        .c2 {
+            color: blue;
+        }
+
+        .c3 {
+            color: red;
+        }
+
+        #a1 {
+            background: orange;
+        }
+    </style> -->
+
+    <!-- <style>
+        h1 {
+            background: orange;
+        }
+
+        h1:hover {
+            background: black;
+            color: white;
+        }
+
+        h1:active {
+            background: white;
+            color: black;
+        }
+    </style> -->
+
+    <!-- <style>
+        p {
+            background: aqua;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        p::first-line {
+            background: gold;
+        }
+    </style> -->
+
+    <!-- <style>
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        li:nth-child(2) {
+            background: yellow;
+        }
+
+        li:nth-last-child(2) {
+            background: gray;
+        }
+    </style> -->
+
+    <!-- <style>
+        h1::before {
+            content: url(/week2-docu/html.png)
+        }
+
+        h1::after {
+            content: "(HTML+CSS+JavaScript)";
+            font-size: small;
+            color: red;
+        }
+    </style> -->
+
+    <!-- <style>
+        ol>li {
+            color: red;
+        }
+    </style>
+
+    <style>
+        ol li {
+            color: red;
+        }
+    </style> -->
+
+    <!-- <style>
+        * {
+            background: skyblue;
+        }
+
+        h1 {
+            background: blue;
+            color: white;
+        }
+
+        h3 {
+            background: white;
+        }
+
+        h3#a {
+            background: gray;
+        }
+
+        div h3 {
+            background: orange;
+        }
+    </style> -->
+
+    <!-- <style>
+        #parent {
+            font-size: 40px;
+        }
+
+        #child1 {
+            font-size: 20px;
+        }
+
+        #child2 {
+            font-size: 150%;
+        }
+
+        #child3 {
+            font-size: 75%;
+        }
+
+        #child4 {
+            font-size: 1.2em;
+        }
+
+        #child5 {
+            font-size: 0.5em;
+        }
+    </style> -->
+
+    <!-- <style>
+        #b1 {
+            background: lavender;
+        }
+
+        #b2 {
+            background: #E6E6FA;
+        }
+
+        #b3 {
+            background: rgb(230, 230, 250);
+        }
+
+        #b4 {
+            background: rgba(230, 230, 250, 1.0);
+        }
+
+        #b5 {
+            background: rgba(230, 230, 250, 0.0);
+        }
+
+        #b6 {
+            background: rgba(230, 230, 250, 0.3);
+        }
+
+        #b7 {
+            background: rgba(230, 230, 250, 0.5);
+        }
+
+        #b8 {
+            background: rgba(230, 230, 250, 0.8);
+        }
+    </style> -->
+
+    <!-- <style>
+        body {
+            background-color: lavender;
+            background-image: url("/week2-docu/html.png");
+            background-position: left top;
+        }
+
+        body {
+            background-repeat: repeat;
+        }
+
+        body {
+            background-repeat: no-repeat;
+        }
+
+        body {
+            background-repeat: repeat-x;
+        }
+
+        body {
+            background-repeat: repeat-y;
+        }
+    </style> -->
+
+    <!-- <style>
+        h3.uppercase {
+            text-align: center;
+            text-decoration: overline;
+            text-transform: uppercase;
+        }
+
+        h3.lowercase {
+            text-align: left;
+            text-decoration: line-through;
+            text-transform: lowercase;
+        }
+
+        h3.capitalize {
+            text-align: right;
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+    </style> -->
+
+    <!-- <style>
+        p {
+            font-family: "Georgia, 맑은 고딕, serif";
+        }
+
+        #p1 {
+            font-size: smaller;
+        }
+
+        #p2 {
+            font-size: small;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        #p3 {
+            font-size: medium;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        #p4 {
+            font-size: large;
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+        #p5 {
+            font-size: larger;
+        }
+    </style> -->
+
+    <!-- <style>
+        .article {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 2px solid red;
+        }
+
+        h1 {
+            column-span: all;
+        }
+    </style> -->
+
+    <!-- <style>
+        ul,
+        ol {
+            border: 1px red dashed;
+        }
+
+        li {
+            border: 1px green dotted;
+        }
+
+        ul.a {
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+
+        ul.c {
+            list-style-image: url("/week2-docu/css.png");
+            list-style-position: outside;
+        }
+
+        ol.d {
+            list-style-type: upper-roman;
+        }
+
+        ol.e {
+            list-style: lower-alpha;
+            list-style-position: inside;
+        }
+    </style> -->
+
+    <style>
+        table {
+            table-layout: auto;
+            width: 80%;
+            border-collapse: separate;
+            border-spacing: 5px 10px;
+            border: 2px solid blue;
+        }
+
+        td {
+            text-align: center;
+            border: 1px dotted red;
+        }
+
+        tr:first-child {
+            background: gray;
+        }
+
+        .c4 {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h3>HTML5 프로그래밍!</h3>
+    <hr>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript & jQuery</li>
+        <li>HTML5 API</li>
+    </ul> -->
+
+    <!-- <h1>HTML5 웹프로그래밍1 (h1)</h1>
+    <h1 style="background: black;">HTML5 웹프로그래밍2 (h1)</h1>
+    <h2>HTML5 웹프로그래밍3 (h2)</h2>
+    <div>
+        <h3>HTML5 웹프로그래밍4 (h3)</h3>
+    </div>
+    <pre><h3>HTML5 웹프로그래밍5 (h3)</h3></pre>
+    <h3>HTML5 웹프로그래밍6 (h3)</h3>
+    <h4>HTML5 웹프로그래밍7 (h4)</h4> -->
+
+    <!-- <h3>HTML5 프로그래밍</h3>
+    <hr>
+    <o1>
+        <li class="c1 c3">HTML5</li>
+        <ul>
+            <li class="c2">하이퍼링크</li>
+            <li class="c2">입력 양식</li>
+        </ul>
+        <li>CSS3</li>
+        <ul>
+            <li class="c3">선택자</li>
+            <li class="c3">CSS 스타일 속성</li>
+            <li id="a1">레이아웃</li>
+        </ul>
+        <li class="c1 c2">JavaScript</li>
+    </o1> -->
+
+    <!-- <h1>HTML5 웹프로그래밍</h1> -->
+
+    <!-- <p>HTML5 웹프로그래밍에서는 HTML, CSS, 자바스크립트를 공부합니다.</p> -->
+
+    <!-- <h1>HTML5 웹프로그래밍</h1>
+    <hr>
+    <ul>
+        <li>웹서버 설치</li>
+        <li>HTML5 문서 작성하기</li>
+        <li>CSS 스타일시트 작성하기</li>
+        <li>자바스크립트 프로그래밍</li>
+        <li>HTML DOM 프로그래밍</li>
+    </ul> -->
+
+    <!-- <h1>HTML5 웹프로그래밍</h1>
+    <ol>
+        <li>HTML5</li>
+        <ul>
+            <li>하이퍼링크</li>
+            <li>테이블</li>
+            <li>입력 양식</li>
+        </ul>
+        <li>CSS3</li>
+        <ul>
+            <li>선택자</li>
+            <li>기본 속성</li>
+            <li>고급 속성</li>
+            <li>레이아웃</li>
+        </ul>
+        <li>JavaScript</li>
+    </ol> -->
+
+    <!-- <h1>웹프로그래밍</h1>
+    <hr>
+    <div>
+        <h3>HTML5 문서 작성</h3>
+    </div>
+    <h3 id="a">CSS 스타일시트 작성</h3>
+    <h3>자바스크립트 프로그래밍</h3> -->
+
+    <!-- <div id="parent">웹프로그래밍0 (40px-기준)
+        <hr>
+        <div id="child1">웹프로그래밍1 (20px)</div>
+        <div id="child2">웹프로그래밍2 (150%)</div>
+        <div id="child3">웹프로그래밍3 (75%)</div>
+        <div id="child4">웹프로그래밍4 (1.2em)</div>
+        <div id="child5">웹프로그래밍5 (0.5em)</div>
+    </div> -->
+
+    <!-- <body id="base">
+        <div id="b1">lavender</div>
+        <div id="b2">#E6E6FA</div>
+        <div id="b3">rgb(230, 230, 250)</div>
+        <div id="b4">rgba(230, 230, 250, 1.0)</div>
+        <div id="b5">rgba(230, 230, 250, 0.0)</div>
+        <div id="b6">rgba(230, 230, 250, 0.3)</div>
+        <div id="b7">rgba(230, 230, 250, 0.5)</div>
+        <div id="b8">rgba(230, 230, 250, 0.8)</div> -->
+
+    <!-- <h3 class="uppercase">This is some text.</h3>
+    <h3 class="lowercase">This is some text.</h3>
+    <h3 class="capitalize">This is some text.</h3> -->
+
+    <!-- <p>JavaScript 프로그래밍</p>
+    <p id="p1">JavaScript 프로그래밍</p>
+    <p id="p2">JavaScript 프로그래밍</p>
+    <p id="p3">JavaScript 프로그래밍</p>
+    <p id="p4">JavaScript 프로그래밍</p>
+    <p id="p5">JavaScript 프로그래밍</p> -->
+
+    <!-- <div class="article">
+        <h1>Lorem Ipsum Dolor Sit Amet</h1>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
+    </div> -->
+
+    <!-- <p>Example of unordered lists:</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Example of ordered lists:</p>
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ol class="e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol> -->
+</body>
+
+</html>
