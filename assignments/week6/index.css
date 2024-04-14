@@ -1,0 +1,96 @@
+/* 메뉴 */
+div.menu {
+    display: flex;
+}
+
+ul {
+    background: lightskyblue;
+    padding: 6px;
+    display: flex;
+}
+
+li {
+    display: inline;
+    padding: 10px 20px;
+}
+
+li a {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    background: white;
+    color: black;
+}
+
+li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 8px 16px 0px lightskyblue;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background: lightskyblue;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 취미, 꿈 */
+div.menu_hobby-dream {
+    display: flex;
+    column-gap: 25px;
+}
+
+/* 좋아하는 책 */
+div.menu_book {
+    display: flex;
+}
+
+div.menu_book img {
+    background: lightskyblue;
+    padding: 6px;
+    margin: 15px;
+    display: flex;
+}
+
+/* 시간표 */
+table {
+    table-layout: auto;
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+    border: 2px solid lightskyblue;
+}
+
+tr:first-child {
+    background: lightskyblue;
+}
+
+td {
+    text-align: center;
+    border: 1px dotted lightskyblue;
+}
+
+td:hover {
+    background: lightskyblue;
+    color: white;
+}
