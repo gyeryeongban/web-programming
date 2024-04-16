@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* #b1 {
+            background: skyblue;
+            border: 2px solid black;
+            width: 100px;
+            height: 60px;
+            margin: 10px;
+            float: left;
+        } */
+
+        /* #b2 {
+            background: orange;
+            border: 1px dashed black;
+        } */
+
+        /* .float-left {
+            float: left;
+            width: 100px;
+        }
+
+        .float-right {
+            float: right;
+            width: 100px;
+        }
+
+        div#b1 {
+            background: yellowgreen;
+            height: 100px;
+        }
+
+        div#b2 {
+            background: orange;
+            height: 150px;
+        }
+
+        div#b3 {
+            background: skyblue;
+            height: 100px;
+        }
+
+        div#b4 {
+            background: gold;
+            height: 100px;
+        }
+
+        div#b5 {
+            background: silver;
+            height: 180px;
+        }
+
+        div#b6 {
+            background: aqua;
+            height: 130px;
+        }
+
+        div#b7 {
+            height: 70px;
+            border: 1px dashed black;
+            clear: left;
+            clear: right;
+        } */
+
+        /* img {
+            margin: 10px 10px;
+        } */
+
+        /* .box {
+            background: gray;
+            color: white;
+        }
+
+        .floating {
+            background: lightgray;
+            margin: 2px;
+            float: left;
+        }
+
+        body {
+            height: 400px;
+        }
+
+        #b1 {
+            height: 20%;
+        }
+
+        #b2 {
+            height: 65%;
+        }
+
+        #f1 {
+            width: 15%;
+            height: 100%;
+        }
+
+        #f2 {
+            width: 50%;
+            height: 100%;
+        }
+
+        #f3 {
+            width: 33%;
+            height: 100%;
+        }
+
+        #b3 {
+            clear: left;
+            height: 10%;
+        } */
+
+        /* p {
+            background: orange;
+            width: 350px;
+            height: 100px;
+            overflow: hidden;
+        } */
+
+        /* #parent {
+            background: gray;
+            text-align: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            width: 720px;
+            height: 70px;
+        }
+
+        .child {
+            background: orange;
+            float: left;
+            box-sizing: border-box;
+            width: 150px;
+            height: 50px;
+            margin: 10px 15px;
+        } */
+
+        /* div {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+
+        #b1 {
+            background: green;
+            top: 30px;
+            left: 30px;
+            z-index: 50;
+        }
+
+        #b2 {
+            background: orange;
+            top: 60px;
+            left: 60px;
+            z-index: 30;
+        }
+
+        #b3 {
+            background: skyblue;
+            top: 90px;
+            left: 90px;
+            z-index: 10;
+        } */
+
+        /* div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #b1 {
+            background: green;
+            top: 30px;
+            left: 30px;
+        }
+
+        #b2 {
+            background: orange;
+            top: 60px;
+            left: 60px;
+            visibility: hidden;
+            display: none;
+        }
+
+        #b3 {
+            background: skyblue;
+            top: 90px;
+            left: 90px;
+        } */
+
+        /* #in {
+            display: inline-block;
+            padding: 0px 30px;
+            visibility: hidden;
+        }
+
+        #out {
+            background: orange;
+            width: 200px;
+            padding: 10px 20px;
+        }
+
+        #out:hover #in {
+            visibility: visible;
+        } */
+
+        /* div {
+            width: 150px;
+            height: 50px;
+            background: gray;
+            text-align: center;
+            line-height: 50px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #b1 {
+            border-radius: 20px;
+        }
+
+        #b2 {
+            border-radius: 60px 20px;
+        }
+
+        #b3 {
+            border-radius: 80px 60px 40px 20px;
+        }
+
+        #b4 {
+            border-top-left-radius: 60px 30px;
+        }
+
+        #b5 {
+            border-top-right-radius: 60px 30px;
+        }
+
+        #b6 {
+            border-radius: 10px/20px;
+        }
+
+        #b7 {
+            border-top-left-radius: 60px 30px;
+            border-bottom-right-radius: 30px 60px;
+            border-top-right-radius: 60px 30px;
+            border-bottom-left-radius: 30px 60px;
+        }
+
+        #b8 {
+            border-radius: 50%;
+        }
+
+        #b9 {
+            border-radius: 40% 20%;
+        }
+
+        #b10 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+        }
+
+        #b11 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 20% 80%;
+        } */
+
+        /* div {
+            background: orange;
+            width: 200px;
+            height: 70px;
+            margin: 30px;
+            line-height: 70px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #b1 {
+            box-shadow: 30px 20px;
+        }
+
+        #b2 {
+            box-shadow: 10px 10px;
+        }
+
+        #b3 {
+            box-shadow: -10px 10px;
+        }
+
+        #b4 {
+            box-shadow: 10px -10px;
+        }
+
+        #b5 {
+            box-shadow: -10px -10px;
+        }
+
+        #b6 {
+            box-shadow: 10px 10px skyblue;
+        }
+
+        #b7 {
+            box-shadow: 10px 10px 5px;
+        }
+
+        #b8 {
+            box-shadow: 10px 10px 5px skyblue;
+        }
+
+        #b9 {
+            box-shadow: 5px 5px 10px black, 0 0 30px blue, 0 0 10px skyblue;
+        } */
+
+        /* div {
+            background: gray;
+            margin: 5px;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            transition: width 10s;
+            transition-delay: 1s;
+        }
+
+        #b1:hover {
+            width: 150px;
+        }
+
+        #b2:hover {
+            width: 200px;
+        }
+
+        #b3:hover {
+            width: 300px;
+        }
+
+        #b4:hover {
+            width: 400px;
+        }
+
+        #b5:hover {
+            width: 500px;
+        } */
+
+        /* #img1 {
+            margin: 10px;
+            transform: translate(10px, 50px);
+        }
+
+        #img2 {
+            margin: 10px;
+            transform: rotate(-20deg);
+        }
+
+        #img3 {
+            margin: 10px;
+            transform: skew(-10deg, -10deg);
+        }
+
+        #img4 {
+            margin: 10px;
+            transform: scale(0.7, 0.7);
+        }
+
+        #img5 {
+            margin: 10px;
+            transform: scaleX(1.5);
+        } */
+
+        /* #img1 {
+            margin-left: 100px;
+            margin-top: 50px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 10px blue;
+            transition: all 10s ease;
+        }
+
+        #img1:hover {
+            border: 1px solid red;
+            box-shadow: 5px 5px 10px blue;
+            transform: rotate(20deg);
+        } */
+
+        /* @keyframes bounding {
+            0% {
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                font-size: 20px;
+            }
+
+            25% {
+                width: 200px;
+                height: 110px;
+                line-height: 110px;
+                font-size: 30px;
+            }
+
+            50% {
+                width: 350px;
+                height: 120px;
+                line-height: 120px;
+                font-size: 50px;
+            }
+
+            75% {
+                width: 450px;
+                height: 130px;
+                line-height: 130px;
+                font-size: 80px;
+            }
+
+            100% {
+                width: 600px;
+                height: 140px;
+                line-height: 140px;
+                font-size: 100px;
+            }
+        }
+
+        div {
+            background-color: orange;
+            text-align: center;
+            animation-name: bounding;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        } */
+
+        /* h1 {
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #b1 {
+            background: linear-gradient(red, yellow);
+        }
+
+        #b2 {
+            background: linear-gradient(to right, red, yellow);
+        }
+
+        #b3 {
+            background: linear-gradient(to bottom right, red, yellow);
+        }
+
+        #b4 {
+            background: linear-gradient(-90deg, red, yellow);
+        }
+
+        #b5 {
+            background: linear-gradient(red, yellow, green);
+        }
+
+        #b6 {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        #b7 {
+            background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+        }
+
+        #b8 {
+            background: repeating-linear-gradient(red, yellow 10%, green 20%);
+        } */
+
+        h3 {
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #b1 {
+            background: radial-gradient(red, yellow, gray);
+        }
+
+        #b2 {
+            background: radial-gradient(red 5%, yellow 15%, gray 60%);
+        }
+
+        #b3 {
+            background: repeating-linear-gradient(red, yellow 10%, gray 15%);
+        }
+
+        #b4 {
+            background: radial-gradient(circle, red, yellow, gray);
+        }
+
+        #b5 {
+            background: radial-gradient(farthest-corner at 60% 55%, red, yellow, gray);
+        }
+
+        #b6 {
+            background: radial-gradient(farthest-side at 60% 55%, red, yellow, gray);
+        }
+
+        #b7 {
+            background: radial-gradient(closest-corner at 60% 55%, red, yellow, gray);
+        }
+
+        #b8 {
+            background: radial-gradient(closest-side at 60% 55%, red, yellow, gray);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="b1">BOX 앞에 있는 박스</div>
+    <div id="box">BOX</div>
+    <div id="b2">BOX 뒤에 있는 박스</div> -->
+
+    <!-- <div class="float-left" id="b1">박스1</div>
+    <div class="float-left" id="b2">박스2</div>
+    <div class="float-left" id="b3">박스3</div>
+    <div class="float-right" id="b4">박스4</div>
+    <div class="float-right" id="b5">박스5</div>
+    <div class="float-right" id="b6">박스6</div>
+    <div id="b7">박스7</div> -->
+
+    <!-- 예시입니다.
+    <p>
+        <img src="/week3/css.png" width="150" height="150">
+        예시입니다.
+    </p> -->
+
+    <!-- <div class="box" id="b1">헤더 박스</div>
+    <div id="b2">
+        <div class="floating" id="f1">플로팅박스 1</div>
+        <div class="floating" id="f2">플로팅박스 2</div>
+        <div class="floating" id="f3">플로팅박스 3</div>
+    </div>
+    <div class="box" id="b3">풋터 박스</div> -->
+
+    <!-- <p>
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+        예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다. 예시입니다.
+    </p> -->
+
+    <!-- <div id="parent">
+        <div class="child">항목 1</div>
+        <div class="child">항목 2</div>
+        <div class="child">항목 3</div>
+        <div class="child">항목 4</div>
+    </div> -->
+
+    <!-- <div id="b1">박스 1</div>
+    <div id="b2">박스 2</div>
+    <div id="b3">박스 3</div> -->
+
+    <!-- <h3>문제: 한국의 남쪽 끝에 위치한 섬의 이름은?</h3>
+    <h3 id="out">답: <span id="in">마라도</span></h3> -->
+
+    <!-- <div>박스-0</div>
+    <div id="b1">박스-1</div>
+    <div id="b2">박스-2</div>
+    <div id="b3">박스-3</div>
+    <div id="b4">박스-4</div>
+    <div id="b5">박스-5</div>
+    <div id="b6">박스-6</div>
+    <div id="b7">박스-7</div>
+    <div id="b8">박스-8</div>
+    <div id="b9">박스-9</div>
+    <div id="b10">박스-10</div>
+    <div id="b11">박스-11</div> -->
+
+    <!-- <div id="b1">그림자 박스(기본)</div>
+    <div id="b2">그림자 박스(기본: 우하)</div>
+    <div id="b3">그림자 박스(방향: 좌하)</div>
+    <div id="b4">그림자 박스(방향: 우상)</div>
+    <div id="b5">그림자 박스(방향: 좌상)</div>
+    <div id="b6">그림자 박스(색상 지정)</div>
+    <div id="b7">그림자 박스(번짐 지정)</div>
+    <div id="b8">그림자 박스(색상/번짐)</div>
+    <div id="b9">그림자 박스(다중 그림자)</div> -->
+
+    <!-- <div id="b1">Level 1</div>
+    <div id="b2">Level 2</div>
+    <div id="b3">Level 3</div>
+    <div id="b4">Level 4</div>
+    <div id="b5">Level 5</div> -->
+
+    <!-- 기본: <img src="/week3/css.png" width="200" height="150" />
+    이동: <img src="/week3/css.png" id="img1" width="200" height="150" />
+    회전: <img src="/week3/css.png" id="img2" width="200" height="150" /><br>
+    왜곡: <img src="/week3/css.png" id="img3" width="200" height="150" />
+    축소: <img src="/week3/css.png" id="img4" width="200" height="150" />
+    확대: <img src="/week3/css.png" id="img5" width="200" height="150" /> -->
+
+    <!-- 마우스를 이미지로 가져가면 이미지가 회전합니다.<br>
+    <img src="/week3/css.png" id="img1" width="200" height="150" /> -->
+
+    <!-- <div>Welcome!</div> -->
+
+    <!-- <h3 id="b1">(1)</h3>
+    <h3 id="b2">(2)</h3>
+    <h3 id="b3">(3)</h3>
+    <h3 id="b4">(4)</h3>
+    <h3 id="b5">(5)</h3>
+    <h3 id="b6">(6)</h3>
+    <h3 id="b7">(7)</h3>
+    <h3 id="b8">(8)</h3> -->
+
+    <h3 id="b1">(1) 균등한 타원 변화</h3>
+    <h3 id="b2">(2) 서로 다른 타원 변화</h3>
+    <h3 id="b3">(3) 반복</h3>
+    <h3 id="b4">(4) 원형 변화</h3>
+    <h3 id="b5">(5) farthest-corner</h3>
+    <h3 id="b6">(6) farthest-side</h3>
+    <h3 id="b7">(7) closest-corner</h3>
+    <h3 id="b8">(8) closest-side</h3>
+</body>
+
+</html>
